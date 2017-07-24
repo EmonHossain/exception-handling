@@ -14,7 +14,7 @@ public class Controller {
 	
 	@GetMapping(value="/person/info")
 	public ResponseEntity<Person> getPerson(){
-		return new ResponseEntity<Person>(new Person("Emon",12), HttpStatus.NOT_FOUND);
+		return new ResponseEntity<Person>(new Person(), HttpStatus.NOT_FOUND);
 	}
 	@GetMapping(value="/person/plain")
 	public Person getPlainPerson(){
